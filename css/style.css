@@ -1,0 +1,30 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+header{
+  display: flex;
+    /*default  */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  justify-content: space-between;  /*main axis esas ox X*/
+  align-items: center; /* cross axis Y*/
+  /* background-color: red; */
+  padding-top: 41px;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+}
+
+header .nav-links a{
+    color: #000;
+}
+
