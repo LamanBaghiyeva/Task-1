@@ -28,3 +28,21 @@ header .nav-links a{
     color: #000;
 }
 
+.fa-bars{
+  display: none;
+}
+@media(max-width:737px){
+  .fa-bars{
+    display: flex;
+    cursor:pointer;
+  }
+  .nav-links{
+    display: none;
+
+  }
+
+  header{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
