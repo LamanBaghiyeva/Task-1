@@ -1,7 +1,7 @@
 @import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body{
+body{ 
     font-family: 'Roboto', sans-serif;
 
 
@@ -31,6 +31,9 @@ header .nav-links a{
 .fa-bars{
   display: none;
 }
+
+/* RESPONSIVE NAVBAR */
+
 @media(max-width:737px){
   .fa-bars{
     display: flex;
@@ -46,3 +49,88 @@ header .nav-links a{
     padding-right: 20px;
   }
 }
+
+/* INTROSECTION START */
+.introsection{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left:7.03rem; /*  112.5/16=7.03rem */ /* 1 rem 16 px di*/
+  padding-right:7.03rem;
+
+}
+
+.intro-left-side{
+  padding-top:7.3rem;
+  min-width: 680px;
+  flex-basis: 50%;
+  
+}
+
+.intro-left-side h1{
+  font-size: 4.3rem; /*70px*/
+  font-weight:700;
+  margin-bottom: 40px;
+}
+
+.intro-left-side h1 span{
+  color: #FF8A56;
+}
+
+.intro-left-side p{
+  margin-bottom: 25px;
+}
+
+.intro-left-side button{
+  width: 121px;
+  height: 43px;
+  background-color: #000;
+  color: #fff;
+  margin-right:25px;
+}
+ .intro-left-side a{
+  color: #000;
+ }
+.intro-right-side{
+  padding-top:4.3rem;
+  min-width:500px;
+  flex: 1;
+}
+
+.intro-right-side img{
+  width: 100%;
+  height: 100%;
+}
+@media(max-width:761px){
+  .intro-left-side{
+    min-width:500px;
+    flex-basis: 100%;
+    text-align: center;
+    padding-top: 40px;
+  
+  }
+
+  .introsection{
+     padding-left: 0;
+     padding-right: 0;
+  }
+}
+@media(max-width:800px){
+  .intro-left-side{
+    padding-top: 7.3rem;
+  }
+}
+
+@media(max-width:1415px) and (min-width:768px){
+  .intro-left-side{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .introsection{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+/* INTROSECTION END */
