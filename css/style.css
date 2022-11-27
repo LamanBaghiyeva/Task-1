@@ -80,6 +80,7 @@ header .nav-links a{
 
 .intro-left-side p{
   margin-bottom: 25px;
+  color:gray
 }
 
 .intro-left-side button{
@@ -160,8 +161,9 @@ header .nav-links a{
 .trusted-by-companies{
   display: flex;
   justify-content: space-around;
+  padding-bottom: 79px;
+ 
 }
-
 
 @media(max-width:768px){
   .trusted-by-company:nth-child(even){
@@ -176,3 +178,74 @@ header .nav-links a{
 }
 
 /* Trusted-by-section END */
+
+/* Services-section START */
+
+.services-section{
+  padding-top:76px ;
+}
+.services-section h6{
+  text-align: center;
+  color: #FF5E69;
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.services-section h1{
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 59px;
+  padding-bottom: 115px;
+}
+
+.services-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card img{
+  padding-bottom: 39.17px;
+}
+
+.service-card h2{
+  font-weight:700;
+  font-size: 24px;
+  line-height:26px;
+  padding-bottom: 25px;
+}
+
+.service-card p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color:#666666;
+  padding-bottom: 21px;
+}
+
+ul{
+  padding-bottom: 167px;
+  list-style-position: inside;
+  list-style-type:square;
+}
+li{
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media(max-width:844px){
+  .service-card{
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .services-section h1{
+    padding-bottom: 80px;
+  }
+
+}
+/* Services-section END */
