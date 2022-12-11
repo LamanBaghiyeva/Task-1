@@ -655,7 +655,7 @@ width: 625px;
 .education-work-side{
   display: flex;
   justify-content: space-between;
-  padding: 154px 113px 191px 113px;
+  padding: 100px 113px 191px 113px;
   flex-wrap: wrap;
 
 }
@@ -765,6 +765,10 @@ padding-bottom: 39px;
   .education-work-side .work-side .icon{
     flex-basis: 5%;
   }
+
+  .education-work-side .education-side{
+    flex-basis: 100%;
+  }
 }
 
 @media(max-width:1279px){
@@ -776,16 +780,30 @@ padding-bottom: 39px;
   .education-work-side{
     padding-left: 20px;
   }
+  .education-work-side{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  
 }
 
 @media(max-width:655px){
   .education-work-side .education-side{
     min-width: 444px;
   }
+  .education-work-side h1{
+    font-size: 32px;
+  }
+
+  .education-work-side h3{
+    font-size: 20px;
+  }
 
   .education-work-side .work-side{
     min-width:444px ;
   }
+
 }
 /* Education-work-side END */
 
@@ -841,6 +859,7 @@ font-size: 36px;
 line-height: 47px;
 color: #000000;
 padding-bottom: 170px;
+min-width: 450px;
 }
 
 .testimonials-section .bottom .bottom-right .bottom-right-bottom .head h5{
@@ -861,7 +880,8 @@ font-weight: 400;
 font-size: 18px;
 line-height: 18px;
 color: #000000;
-min-width: 585px;
+min-width: 198px;
+
 }
 
 .testimonials-section .bottom .bottom-right .bottom-right-bottom {
@@ -894,9 +914,20 @@ min-width: 585px;
 }
 
 @media (max-width:788px) {
-  .testimonials-section .bottom .bottom-right .bottom-right-bottom button{
-    display: none;
+
+  .testimonials-section .header h2{
+    font-size: 40px;
+    padding-bottom: 8px;
   }
+
+  .testimonials-section{
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  /* .testimonials-section .bottom .bottom-right .bottom-right-bottom button{
+    display: none;
+  } */
   
 
   .testimonials-section .bottom .bottom-right .bottom-right-head h4{
@@ -909,7 +940,6 @@ min-width: 585px;
     height: 400px;
 
   }
-
 
 }
 
@@ -997,6 +1027,17 @@ padding-top: 30.18px;
   }
 }
 
+@media(max-width:1462px){
+  .faq .left-side{
+    flex-basis: 100%;
+  }
+
+  .faq .right-side{
+    padding-left: 4px;
+  }
+
+}
+
 @media(max-width:790px){
   .faq{
     padding-left: 4px;
@@ -1004,6 +1045,13 @@ padding-top: 30.18px;
 
   .faq-header{
     padding-bottom: 8px;
+  }
+  .faq .faq-header h1{
+    font-size: 35px;
+  }
+
+  .faq .faq-bottom p{
+    font-size: 20px;
   }
 }
 
@@ -1086,6 +1134,27 @@ color: #666666;
   .final-section .right-side .box:not(:first-child) p{
     padding-left: 50px;
   }
+
+  .final-section .header{
+    padding-top: 40px;
+    padding-bottom: 23px;
+  }
+  
+  .final-section .header h1{
+    font-size: 45px;
+  }
+
+  .final-section{
+    padding-left: 10px;
+  }
+
+  .final-section .footer{
+    padding-top: 20px;
+  }
+
+  .final-section .footer .right-side{
+    padding-top: 20px;
+  }
 }
 
 /* Final-section END*/
@@ -1106,6 +1175,12 @@ footer{
 @media(max-width:1232px){
   footer{
     flex-wrap: wrap;
+  }
+}
+
+@media(max-width:728px){
+  footer{
+    padding:8px 0 28px 8px;
   }
 }
 
